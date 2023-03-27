@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #2f4f4f;
+}
+
+h1 {
+    color: #fff;
+    margin: 20px 0px 10px 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 900px;
+    background-color: #2f4f4f;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+form {
+    width: 100%;
+    position: relative;
+}
+
+form input {
+    width: 500px;
+    height: 55px;
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+    border-radius: 10px;
+    border: 1px solid #122222;
+    margin-bottom: 50px;
+}
+
+form button {
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    height: 55px;
+    width: 60px;
+    cursor: pointer;
+    background-color: #ffc107;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.tarefas .item {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    box-shadow: 0px 0px 10px 1px #2f3f3f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.itemCompleto {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    box-shadow: 0px 0px 10px 1px #2f3f3f;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.itemCompleto button {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    margin-right: -70px;
+    color: #fff;
+    background-color: #dc3545;
+    border: 0;
+    border-radius: 5px;
+    width: 50px;
+}
+
+.item button {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    margin-right: -70px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc3545;
+    border: 0;
+    border-radius: 5px;
+    width: 50px;
+}
+
+
+@media (min-width: 320px){
+    
+    .main {
+        width: 100%;
+    }
+
+    form input {
+        width: 70%;
+        margin-left: -70px;
+        font-size: 14px;
+    }
+
+    .tarefas {
+        margin-left: -70px;
+    }
+
+}
+
+@media (min-width: 468px) {
+    form input {
+        font-size: 18px;
+    }
+    .tarefas {
+        font-size: 18px;
+    }
+}
+@media (min-width: 770px) {
+    form input {
+        font-size: 22px;
+    }
+    .tarefas {
+        font-size: 22px;
+    }
+    .itemCompleto button {
+        height: 45px;
+    }
+    .item button {
+        height: 45px;
+    }
+}
+@media (min-width: 1024px) {
+    form input {
+        font-size: 25px;
+    }
+    .tarefas {
+        font-size: 25px;
+    }
+    .itemCompleto button {
+        height: 50px;
+    }
+    .item button {
+        height: 50px;
+    }
+}
